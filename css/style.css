@@ -345,6 +345,12 @@ button:disabled {
     overflow: hidden;
 }
 
+@media (max-width: 650px) {
+    .preview_text {
+        font-size: 11px;
+    }
+}
+
 .btn_done_copy {
     padding-inline: 10px;
     padding-block: 10px;
