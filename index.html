@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/typing.png" type="image/x-icon" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!----------------------OG------------------------------>
+    <meta name="title" property="og:title" content="Abdelrhman A. Radwan" />
+    <meta name="type" property="og:type" content="website" />
+    <meta name="url" property="og:url" content="" />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://collection.cloudinary.com/dhxwqeql1/24598f78b21f44cd5163ed4d1a91830c"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      name="description"
+      property="og:description"
+      content="I’m Abdelrahman A. Radwan, a Front-End Developer specializing in Angular. I have hands-on experience building responsive and scalable web applications."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!----------------------OG------------------------------>
+    <title>Typing Animation Generator</title>
+  </head>
+  <body>
+    <div class="stars">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <h1 class="h1_title">Typing Animation Generator</h1>
+    <div class="parent_container">
+      <div class="container">
+        <label for="numberOfWords">اكتب عدد الكلمات :</label>
+        <input
+          id="numberOfWords"
+          type="number"
+          alt="input number of words"
+          dir="rtl"
+          placeholder="مثال : 2"
+          min="1"
+          max="20"
+        />
+        <p id="paragraphWords" class="paragraph_words">
+          يجب أن يكون عدد الكلمات عددًا صحيحًا من 1 إلى 20
+        </p>
+      </div>
+
+      <div class="container">
+        <label for="show_of_words">حدد مدة عرض كل كلمة :</label>
+        <input
+          id="show_of_words"
+          type="number"
+          alt="input show of words"
+          dir="rtl"
+          placeholder="مثال : 3"
+        />
+        <p id="showOfWords" class="paragraph_words">
+          يجب أن تكون مدة العرض أكبر من صفر
+        </p>
+      </div>
+
+      <div class="container">
+        <label for="display_of_words">حدد مدة ظهور كل كلمة :</label>
+        <input
+          id="display_of_words"
+          type="number"
+          alt="input display of words"
+          dir="rtl"
+          placeholder="مثال : 2"
+        />
+        <p id="displayOfWords" class="paragraph_words">
+          يجب أن تكون مدة الظهور صفر أو أكثر وأقل من مدة عرض الكلمة
+        </p>
+      </div>
+
+      <div class="container">
+        <label for="hide_of_words">حدد مدة اختفاء كل كلمة :</label>
+        <input
+          id="hide_of_words"
+          type="number"
+          alt="input hide of words"
+          dir="rtl"
+          placeholder="مثال : 1"
+        />
+        <p id="hideOfWords" class="paragraph_words">
+          يجب أن تكون مدة الاختفاء صفر أو أكثر، وأقل من مدة عرض الكلمة
+        </p>
+      </div>
+
+      <div class="br_bt"></div>
+
+      <div class="box_words">
+        <p class="label_word">تُنتج خانات لإدخال الكلمات أدناه:</p>
+        <div id="finalResult" class="result_of_words"></div>
+      </div>
+
+      <div class="br_bt"></div>
+
+      <div class="btn_submit">
+        <button class="btn" id="generate-code" type="submit" disabled>
+          عرض كود الأنميشن
+        </button>
+        <div class="preview_box">
+          <p class="preview_text test">Preview Animation</p>
+        </div>
+      </div>
+
+      <div class="result_box">
+        <pre class="result_keyframes" id="result">
+          <code class="result_code">
+          <span class="keyword">@keyframes</span> typing {
+            <span class="comment">// املأ الخانات المطلوبة أعلاه ثم اضغط على زر [عرض كود الأنميشن]</span>
+          }
+          </code>
+        </pre>
+        <button class="btn" id="copy">
+          <span>نسخ</span>
+          <i class="fa-regular fa-clipboard"></i>
+        </button>
+        <button class="btn_done_copy d-none">
+          <span>تم النسح!</span>
+          <i class="fa-regular fa-copy"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
